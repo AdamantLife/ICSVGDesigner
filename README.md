@@ -1,27 +1,29 @@
 # IC SVG Designer
 A small utility to design SVG Schematic Symbols for ICs.
 
+![](readmeimages/sample.png)
+
 [Youtube Overview](https://www.youtube.com/watch?v=DHbs9OUd5ew&pp=ygUPaWMgc3ZnIGRlc2lnbmVy)
 
 ### Running
-Either download the Repo and use `pip` to install it locally. Alternatively, download the Windows Executable from the [Releases Page](https://github.com/AdamantLife/ICSVGDesigner/releases).
-If installed via Python, the following methods can be used to launch the program from your terminal:
-```
-# Added via pip install
-icsvgdesigner
+Either clone the Repo from [Github](https://github.com/AdamantLife/ICSVGDesigner) or download the Windows Executable from the [Releases Page](https://github.com/AdamantLife/ICSVGDesigner/releases).
 
-# From within the ICSVGDesigener source folder
+If you cloned the Repo you can install the ICSVGDesign using the setup file in the toplevel directory, for example `pip install .` (from within the toplevel). The GUI can be initialized with any of the following commands:
+```
+# Added via pip install, available anywhere
+icsvgdesigner
+python -m ICSVGDesigner
+
+# From within the ICSVGDesigner source folder (no install required)
 python __init__.py
 python __main__.py
-
-# From anywhere
-python -m ICSVGDesigner
 ```
 
 ### Usage
 * Width and Height of the body and number of Pins each side are set numerically
 * Left-click on a pin in the Preview Window to disable it- it will not be exported
 * Left-clicking a Pin (row) in the output table will highlight it in Blue in the Preview Window
+![](readmeimages/setname.png)
 * Each Pin can have a name assigned to it by double clicking the **Name** column of that Pin and supplying a name in the displayed entry
 * Each Pin can have a *unique* pin number assigned to it by double clicking the **Pin Number** of that Pin and supplying a number in the displayed entry
 * To output the SVG, click the **Export** button
